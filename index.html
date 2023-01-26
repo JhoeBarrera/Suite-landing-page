@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Suite landing page</title>
+	</head>
+	<body>
+		<header class="hero">
+			<div class="hero__top container">
+				<a href="#" class="hero__logo"
+					><img src="assets/logo.svg" alt="Suite Logo"
+				/></a>
+				<a href="#" class="button">Request Beta Access</a>
+			</div>
+			<div class="hero__body container">
+				<div>
+					<div class="hero__body-content">
+						<h1 class="hero__title">
+							A
+							<span class="hero__title--bold"
+								>super
+								<span class="hero__title--decoration">solution</span></span
+							>
+							for your <span class="hero__title--bold">business</span>.
+						</h1>
+						<p class="hero__text">
+							Our marketing and sales automations help you scale your outreach
+							to get more leads for your company.
+						</p>
+						<a href="#" class="button hero__cta">Request Beta Access</a>
+					</div>
+					<picture class="hero__picture">
+						<source
+							media="(min-width: 768px)"
+							srcset="
+								assets/image-hero-portrait.png,
+								assets/image-hero-portrait@2x.png 2x
+							"
+							type="image/png"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcset="
+								assets/image-hero-portrait.webp,
+								assets/image-hero-portrait@2x.webp 2x
+							"
+						/>
+						<source
+							srcset="
+								assets/image-hero-landscape.png,
+								assets/image-hero-landscape@2x.png 2x
+							"
+							type="image/png"
+						/>
+						<img
+							src="assets/image-hero-landscape.webp"
+							srcset="assets/image-hero-landscape@2x.webp 2x"
+							alt="Smartphone"
+							class="hero__img"
+						/>
+					</picture>
+				</div>
+				<ul class="hero__stats">
+					<li class="hero__stats-item">
+						2K+<span class="hero__stats-title">Companies</span>
+					</li>
+					<li class="hero__stats-item">
+						8<span class="hero__stats-title">Languages</span>
+					</li>
+					<li class="hero__stats-item">
+						1.2M<span class="hero__stats-title">Leads</span>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="section">
+			<div class="section__container-img">
+				<picture>
+					<source
+						media="(min-width: 1024px)"
+						srcset="
+							assets/image-jeremy-large.png,
+							assets/image-jeremy-large@2x.png
+						"
+						type="image/png"
+					/>
+					<source
+						media="(min-width: 1024px)"
+						srcset="
+							assets/image-jeremy-large.webp,
+							assets/image-jeremy-small@2x.webp
+						"
+					/>
+					<source
+						srcset="
+							assets/image-jeremy-small.png,
+							assets/image-jeremy-small@2x.png 2x
+						"
+						type="image/png"
+					/>
+					<img
+						src="assets/image-jeremy-small.webp"
+						srcset="assets/image-jeremy-small@2x.webp 2x"
+						alt="Jeremy looking at his phone"
+						class="section__img"
+					/><!-- srcset es una solución para la perdida de calidad debido al device pixel ratio -->
+				</picture>
+			</div>
+			<div class="section__content container">
+				<h2 class="section__title">
+					It just <span class="section__title--bold">works.</span>
+				</h2>
+				<p class="section__quote">
+					“I really like how it is an all-in-one solution that handle many of
+					the tasks that you would normally need separate tools to do the same
+					job. This thing is a miracle worker.”
+				</p>
+				<h3 class="section__subtitle">
+					Jeremy Robinson
+					<span class="section__subtitle--context">CMO, FYLO</span>
+				</h3>
+			</div>
+		</section>
+		<footer class="footer container">
+			<a href="#"><img src="assets/logo.svg" alt="Suite Logo" /></a>
+			<small class="footer__legal-text">Copyright - Suite</small>
+			<div class="footer__social-media">
+				<span><img src="assets/icon-facebook.svg" alt="Facebook Icon" /></span>
+				<span><img src="assets/icon-twitter.svg" alt="Twitter Icon" /></span>
+				<span
+					><img src="assets/icon-instagram.svg" alt="Instagram Icon"
+				/></span>
+			</div>
+		</footer>
+	</body>
+</html>
